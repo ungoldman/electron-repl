@@ -7,10 +7,10 @@
     "electron-repl": "bin.js"
   },
   "bugs": {
-    "url": "https://github.com/ungoldman/electron-repl/issues"
+    "url": "https://github.com/hypermodules/electron-repl/issues"
   },
   "contributors": [
-    "Nate Goldman <ungoldman@gmail.com"
+    "Nate Goldman <ungoldman@gmail.com>"
   ],
   "dependencies": {
     "strip-bom": "^1.0.0"
@@ -20,7 +20,7 @@
     "snazzy": "^7.0.0",
     "standard": "^10.0.2"
   },
-  "homepage": "https://github.com/ungoldman/electron-repl",
+  "homepage": "https://github.com/hypermodules/electron-repl",
   "keywords": [
     "electron",
     "repl"
@@ -29,7 +29,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ungoldman/electron-repl.git"
+    "url": "https://github.com/hypermodules/electron-repl.git"
   },
   "scripts": {
     "test": "standard --verbose | snazzy"
