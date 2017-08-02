@@ -1,8 +1,8 @@
 {
   "name": "electron-repl",
   "description": "Interactive REPL for debugging Electron programs.",
-  "version": "1.0.0",
-  "author": "max ogden",
+  "version": "1.0.1",
+  "author": "Nate Goldman <ungoldman@gmail.com>",
   "bin": {
     "electron-repl": "bin.js"
   },
@@ -10,7 +10,9 @@
     "url": "https://github.com/hypermodules/electron-repl/issues"
   },
   "contributors": [
-    "Nate Goldman <ungoldman@gmail.com>"
+    "Eugene Sharygin",
+    "Mathias Buus",
+    "Max Ogden"
   ],
   "dependencies": {
     "strip-bom": "^1.0.0"
