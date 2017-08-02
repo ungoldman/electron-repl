@@ -1,7 +1,7 @@
 {
   "name": "electron-repl",
   "description": "Interactive REPL for debugging Electron programs.",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "max ogden",
   "bin": {
     "electron-repl": "bin.js"
