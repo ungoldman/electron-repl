@@ -10,19 +10,22 @@ available as a command-line tool
 
 this is a fork of [node-repl](https://github.com/maxogden/node-repl) by [maxogden](https://github.com/maxogden)
 
-## Install
 
-```js
-npm install electron-repl -g
-```
+## Usage
 
-## CLI Usage
-
-```bash
+```sh
+$ npm i -g electron-repl
 $ electron-repl
 Usage: electron-repl <filename>
 
 $ electron-repl your-program.js
+>
+```
+
+If you have `npm@5.2+` installed, you can just do:
+
+```sh
+$ npx electron-repl your-program.js
 >
 ```
 
