@@ -5,7 +5,7 @@
       if (NODE_REPL_SOURCES.length) {
         var NODE_REPL_NEXT = NODE_REPL_SOURCES.shift()
         try {
-          NODE_REPL_NEXT.callback(null, eval(NODE_REPL_NEXT.command))
+          NODE_REPL_NEXT.callback(null, eval(NODE_REPL_NEXT.command)) // eslint-disable-line no-eval
         } catch (e) {
           NODE_REPL_NEXT.callback(e)
         }

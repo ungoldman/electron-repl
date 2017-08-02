@@ -1,28 +1,28 @@
-# node-repl
+# electron-repl
 
-an interactive repl for debugging node programs.
+Interactive REPL for debugging Electron programs.
 
-run a node program but also attach a repl to the same context that your code runs in so you can inspect + mess with stuff as your program is running
+## About
+
+run an electron program but also attach a repl to the same context that your code runs in so you can inspect + mess with stuff as your program is running
 
 available as a command-line tool
 
-[![NPM](https://nodei.co/npm/node-repl.png)](https://nodei.co/npm/node-repl/)
+this is a fork of [node-repl](https://github.com/maxogden/node-repl) by [maxogden](https://github.com/maxogden)
 
-currently this only works on node >=0.12 and iojs as it uses a generator to make the eval loop preserve scope.
-
-## installation
+## Install
 
 ```js
-npm install node-repl -g
+npm install electron-repl -g
 ```
 
-## CLI usage
+## CLI Usage
 
 ```bash
-$ node-repl
-Usage: node-repl <filename>
+$ electron-repl
+Usage: electron-repl <filename>
 
-$ node-repl your-program.js
+$ electron-repl your-program.js
 >
 ```
 
@@ -34,15 +34,23 @@ suppose we have a program called `hello.js` that has these contents:
 var pizza = 1
 ```
 
-if you run `node-repl hello.js` you will get a repl, just like when you run `node`.
+if you run `electron-repl hello.js` you will get a repl, just like when you run `electron`.
 
 The difference is that this repl is running *in the same context as your program*.
 
 ```
-$ node-repl hello.js
-> 1 + 1 // we are in a node repl
+$ electron-repl hello.js
+> 1 + 1 // we are in an electron repl
 2
 > pizza // we can access variables in our program
 1
 >
 ```
+
+## credit
+
+This is a fork of [node-repl](https://github.com/maxogden/node-repl) modified to work with [electron](https://github.com/electron/electron). Almost everything in this module was originally created by [maxogden](https://github.com/maxogden) and `node-repl` contributors. Thank you!
+
+## license
+
+BSD

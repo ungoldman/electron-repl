@@ -1,26 +1,37 @@
 {
-  "name": "node-repl",
-  "version": "2.0.2",
-  "bin": {
-    "node-repl": "bin.js"
-  },
-  "description": "run a node program but also attach a repl to the same context that your code runs in so you can inspect + mess with stuff as your program is running",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "electron-repl",
+  "description": "Interactive REPL for debugging Electron programs.",
+  "version": "0.0.0",
   "author": "max ogden",
-  "license": "BSD",
+  "bin": {
+    "electron-repl": "bin.js"
+  },
+  "bugs": {
+    "url": "https://github.com/ungoldman/electron-repl/issues"
+  },
+  "contributors": [
+    "Nate Goldman <ungoldman@gmail.com"
+  ],
   "dependencies": {
     "strip-bom": "^1.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "electron": "^1.6.11",
+    "snazzy": "^7.0.0",
+    "standard": "^10.0.2"
+  },
+  "homepage": "https://github.com/ungoldman/electron-repl",
+  "keywords": [
+    "electron",
+    "repl"
+  ],
+  "license": "BSD",
+  "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/maxogden/node-repl.git"
+    "url": "https://github.com/ungoldman/electron-repl.git"
   },
-  "bugs": {
-    "url": "https://github.com/maxogden/node-repl/issues"
-  },
-  "homepage": "https://github.com/maxogden/node-repl"
+  "scripts": {
+    "test": "standard --verbose | snazzy"
+  }
 }
