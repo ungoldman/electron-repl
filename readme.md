@@ -1,23 +1,27 @@
-# electron-repl
+# electron-repl [![stability][0]][1]
 
 Interactive REPL for debugging Electron programs.
 
-[![npm][npm-image]][npm-url]
-[![travis][travis-image]][travis-url]
-[![standard][standard-image]][standard-url]
-[![downloads][downloads-img]][npm-url]
+[![npm][2]][3]
+[![travis][4]][5]
+[![standard][6]][7]
+[![downloads][8]][3]
 
-[npm-image]: https://img.shields.io/npm/v/electron-repl.svg?style=flat-square
-[npm-url]: https://www.npmjs.com/package/electron-repl
-[travis-image]: https://img.shields.io/travis/hypermodules/electron-repl/master.svg?style=flat-square
-[travis-url]: https://travis-ci.org/hypermodules/electron-repl
-[standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
-[standard-url]: http://standardjs.com/
-[downloads-img]: https://img.shields.io/npm/dm/electron-repl.svg?style=flat-square
+[0]: https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square
+[1]: https://nodejs.org/api/documentation.html#documentation_stability_index
+[2]: https://img.shields.io/npm/v/electron-repl.svg?style=flat-square
+[3]: https://www.npmjs.com/package/electron-repl
+[4]: https://img.shields.io/travis/hypermodules/electron-repl/master.svg?style=flat-square
+[5]: https://travis-ci.org/hypermodules/electron-repl
+[6]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
+[7]: http://standardjs.com/
+[8]: https://img.shields.io/npm/dm/electron-repl.svg?style=flat-square
 
 ## About
 
 Run an electron program but also attach a REPL to the same context that your code runs in so you can inspect and mess with stuff as your program is running!
+
+**This is alpha quality and not guaranteed to work with complex programs! Please report issues and contribute fixes if you can.**
 
 This command-line tool is a fork of [node-repl](https://github.com/maxogden/node-repl) by [maxogden](https://github.com/maxogden).
 
@@ -59,6 +63,10 @@ $ electron-repl hello.js
 1
 >
 ```
+
+## Contributing
+
+Contributions welcome! Please read the [contributing guidelines](contributing.md) first.
 
 ## Credit
 
