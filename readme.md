@@ -25,6 +25,10 @@ Run an electron program but also attach a REPL to the same context that your cod
 
 This command-line tool is a fork of [node-repl](https://github.com/maxogden/node-repl) by [maxogden](https://github.com/maxogden).
 
+## Known Issues
+
+Currently this only works with the `main` electron process -- relative requires don't work in the `renderer` thread and things just explode in there. If you think you know a fix please [let us know](https://github.com/hypermodules/electron-repl/issues/1)!
+
 ## Usage
 
 ```sh
